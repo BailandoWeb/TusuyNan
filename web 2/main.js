@@ -20,16 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarComponente("#footer-dinamico", "footer.html");
 });
 
-// Efecto de desvanecimiento del Hero al hacer scroll
-window.addEventListener('scroll', function() {
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent) {
-        let scrollPos = window.scrollY;
-        // A medida que bajas, la opacidad disminuye y el texto sube un poco
-        heroContent.style.opacity = 1 - (scrollPos / 600);
-        heroContent.style.transform = `translateY(${scrollPos * 0.4}px)`;
-    }
-});
 
 
 
