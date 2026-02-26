@@ -234,63 +234,7 @@ body { background-color: var(--bg-light); font-family: var(--font-main); color: 
 
 /* --- SECCIÓN CLASES: DISEÑO UNIFICADO E INTERACTIVO --- */
 
-/* Grid con alturas iguales */
-.catalog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    align-items: stretch; /* Asegura que todas tengan la misma altura */
-    padding: 50px 5% 100px;
-}
 
-.catalog-card {
-    background: #fff;
-    border: 1px solid #f0f0f0; /* Borde muy sutil */
-    transition: 0.4s ease;
-    display: flex;
-    flex-direction: column; /* Para que el contenido estire la tarjeta */
-}
-
-/* Contenedor de la imagen y la etiqueta central */
-.card-image {
-    height: 250px; /* Altura reducida (antes era 450px) */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    
-    /* ESTADO INICIAL: Foto B/N, Etiqueta Color */
-    filter: grayscale(100%); 
-    transition: 0.5s ease;
-    
-    /* Centrar la etiqueta */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Etiqueta central del país */
-.country-tag {
-    /* Eliminamos posiciones absolutas, usamos flex del padre */
-    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente para contraste */
-    border: 2px solid var(--gold);  /* Borde dorado vibrante */
-    color: var(--gold);             /* Texto dorado */
-    padding: 10px 25px;
-    font-family: var(--font-title);
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    z-index: 2;
-    transition: 0.5s ease; /* Transición suave para el efecto inverso */
-}
-
-.card-content {
-    padding: 30px;
-    text-align: center; /* Texto centrado para acompañar el diseño */
-    flex-grow: 1; /* Ocupa el espacio restante para igualar alturas */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .card-content h3 {
     font-family: var(--font-title);
